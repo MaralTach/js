@@ -153,6 +153,9 @@ html::-webkit-scrollbar-thumb{
 
 
 
+
+
+
 /* media  */
 @media (max-width:991px){
    
@@ -164,9 +167,23 @@ html::-webkit-scrollbar-thumb{
         padding:2rem;
     }
 }
+
+
 @media (max-width:768px){
+    html{
+        scroll-padding-top: 0;
+    }
+
+    body{
+        padding-bottom: 6rem;
+    }
+
     .header .header-2{
         display: none;
+    }
+
+    .bottom-navbar{
+        display: block;
     }
 
     #search-btn{
