@@ -40,6 +40,10 @@ html::-webkit-scrollbar-thumb{
     background: var(--black);
 }
 
+section{
+    padding: 5rem 9%;
+}
+
 .btn{
     margin-top: 1rem;
     display: inline-block;
@@ -164,11 +168,15 @@ html::-webkit-scrollbar-thumb{
     justify-content: center;
     background: rgba(255,255,255,0.9);
     position: fixed;
-    top: 0; left: 0;
+    top: 0; right: -105%;
     z-index: 1000;
     height: 100%;
     width: 100%;
 }
+.login-form-container.active{
+    right:0;
+}
+
 .login-form-container form{
     background: #fff;
     border: var(--border);
@@ -217,11 +225,64 @@ html::-webkit-scrollbar-thumb{
     width: 100%;
     margin: 1.5rem 0;
 }
+.login-form-container form p{
+    padding-top: .8rem;
+    color: var(--light-color);
+    font-size: 1.5rem;
+}
+.login-form-container form p a{
+    color: var(--green);
+    text-decoration: underline;
+}
+.login-form-container #close-login-btn{
+    position: absolute;
+    top: 1.5rem; right: 2.5rem;
+    font-size: 3.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
 
+.home{
+    background: url(img/banner-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.home .row .content{
+    flex: 1 1 42rem;
+}
 
+.home .row .books-slider{
+    flex: 1 1 42rem;
+    text-align: center;
+    margin-top: 2rem;
+}
 
+.home .row .books-slider a img{
+    height: 25rem;
+}
 
+.home .row .books-slider a:hover img{
+    transform: scale(.9);
+}
+.home .row .books-slider .stand{
+    width: 100%;
+    margin-top: -2rem;
+}
 
+.home .row .content h3{
+    color: var(--black);
+    font-size: 4.5rem;
+}
+.home .row .content p{
+    color: var(--black);
+    font-size: 1.5rem;
+}
 
 
 
@@ -245,6 +306,9 @@ html::-webkit-scrollbar-thumb{
 
     .header .header-1{
         padding:2rem;
+    }
+    section{
+        padding: 3rem 2rem;
     }
 }
 
